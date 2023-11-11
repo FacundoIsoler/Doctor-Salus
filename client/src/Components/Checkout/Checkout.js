@@ -3,9 +3,10 @@
 import React, { useState } from 'react';
 import PaymentForm from '../PaymentForm/PaymentForm';
 import './Checkout.css';
+import { useSelector } from 'react-redux';
 
 const Checkout = () => {
-    const [cart, setCart] = useState([]);
+    const cart = useSelector((state) => state.cart);
     const [checkoutComplete, setCheckoutComplete] = useState(false);
 
     const handlePaymentComplete = () => {

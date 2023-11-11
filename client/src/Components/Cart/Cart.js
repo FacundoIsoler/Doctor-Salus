@@ -2,8 +2,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
-
-
 import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
 import './Cart.css';
 
