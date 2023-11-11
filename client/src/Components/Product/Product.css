@@ -1,0 +1,37 @@
+/* src/components/Product/Product.css */
+
+.product {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.product h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
