@@ -1,37 +1,36 @@
-/* src/components/Product/Product.css */
-
+/* Product.css */
 .product {
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid #e0e0e0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .product h2 {
-    color: #333;
     font-size: 24px;
-    margin-bottom: 10px;
 }
 
 .product p {
-    color: #666;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin: 10px 0;
+}
+
+.product p.price {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 18px;
 }
 
 .product button {
     background-color: #007bff;
-    color: #ffffff;
-    border: none;
+    color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+    border: none;
     font-size: 16px;
+    cursor: pointer;
 }
 
-.product button:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
+.product button:hover {
+    background-color: #0056b3;
 }

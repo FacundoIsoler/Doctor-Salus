@@ -1,36 +1,17 @@
-/* src/App.css */
-
+/* App.css */
 body {
   font-family: 'Arial', sans-serif;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROf7bs1C9HcqwNNTFlJhOSmuR6qkekht4eVQ&usqp=CAU');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
   margin: 0;
   padding: 0;
   color: #333;
 }
 
-.App {
-  text-align: center;
-  padding: 20px;
-}
-
-.product-container,
-.cart-container {
-  display: inline-block;
-  vertical-align: top;
-  margin: 10px;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  text-align: left;
-}
-
 h1 {
-  color: #333;
+  text-align: center;
+  color: #007bff;
+  font-size: 28px;
+  margin: 20px 0;
 }
+
 
 /* Estilos adicionales, si es necesario */

@@ -1,25 +1,50 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Home.css';
 import Product from '../Product/Product';
+import Footer from '../Footer/Footer.js';
+import Doctor from '../../Assets/Medico.jpeg';
+import Operador from '../../Assets/Operador.jpeg';
+import CallCenter from '../../Assets/CallCenter.jpeg';
 
 const Home = () => {
     return (
         <div className="home">
             <h1>Doctor Salus</h1>
             <h1>Telemedicina al alcance de todos</h1>
+
+            {/* Secciones con imágenes */}
+            <div className="home-section-container">
+                <section className="home-section">
+                    <img src={Doctor} alt="Imagen 1" />
+                    <h2>Médicos especializados</h2>
+                </section>
+
+                <section className="home-section">
+                    <img src={Operador} alt="Imagen 2" />
+                    <h2>Operadores capacitados</h2>
+                </section>
+
+                <section className="home-section">
+                    <img src={CallCenter} alt="Imagen 3" />
+                    <h2>Centro de ayuda a su</h2>
+                </section>
+            </div>
+
             <span>
-                Las telemedicina no es para situaciones de riesgo de vida o emergencias
+                Las telemedicina no es para situaciones de riesgo de vida o emergencias.
                 Puede hacer uso si tiene los siguientes síntomas: Fiebre de reciente evolución, Diarrea,
                 Resfrío, Síntomas gripales, Tos, Consultas sobre medicación. Este servicio no es para pacientes
                 embarazadas ni pacientes mayores de 65 años.
             </span>
+
             <div className="product-container">
-                <Product />
-                <button>Seguimeinto de mi solicitud</button>
+                <Product /> 
+                <button>Seguimiento de mi solicitud</button>
             </div>
+
+            <Footer />
         </div>
     );
-};
+}
 
 export default Home;

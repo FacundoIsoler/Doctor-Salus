@@ -1,0 +1,42 @@
+.patient-form {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .patient-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .patient-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .patient-form input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .patient-form select {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .patient-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  

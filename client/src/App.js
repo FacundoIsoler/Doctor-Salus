@@ -5,11 +5,13 @@ import store from './Store/Store.js';
 import Home from './Components/Home/Home';
 import Cart from './Components/Cart/Cart';
 import PatientForm from './Components/PatientForm/PatientForm.js';
+import Navbar from './Components/Navbar/Navbar.js';
 
 function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
+      <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pagodeservicio" element={<Cart />} />
