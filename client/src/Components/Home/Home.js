@@ -31,14 +31,27 @@ const Home = () => {
             </div>
 
             <span>
-                Las telemedicina no es para situaciones de riesgo de vida o emergencias.
-                Puede hacer uso si tiene los siguientes síntomas: Fiebre de reciente evolución, Diarrea,
-                Resfrío, Síntomas gripales, Tos, Consultas sobre medicación. Este servicio no es para pacientes
+                <div className='alert'>
+                    Las telemedicina no es para situaciones de riesgo de vida o emergencias.
+                </div>
+                <div className='sintoms'>
+                    <br />Puede hacer uso si tiene los siguientes síntomas:
+                </div>
+                <div className='sintoms-list'>
+                    <ul>
+                        <li>Fiebre de reciente evolución</li>
+                        <li>Diarrea</li>
+                        <li>Resfrío</li>
+                        <li>Tos</li>
+                        <li>Consultas sobre medicación</li>
+                    </ul>
+                </div>
+                Este servicio no es para pacientes
                 embarazadas ni pacientes mayores de 65 años.
             </span>
 
             <div className="product-container">
-                <Product /> 
+                <Product />
                 <button>Seguimiento de mi solicitud</button>
             </div>
 

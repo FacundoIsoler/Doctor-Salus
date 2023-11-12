@@ -19,13 +19,23 @@ body {
 }
 
 h1 {
-    font-size: 28px;
-    margin: 20px 0;
+    font-size: 60px;
+    margin: 55px 15px 0 0 ;
 }
 
 span {
-    font-size: 16px;
-    margin: 20px 0;
+    font-size: 30px;
+    width: 65%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto */
+}
+
+.alert {
+    color: red
+}
+
+.home li {
+    font-size: 25px;
+    list-style: none; /* Ajusta los puntos de la lista al interior del texto */
 }
 
 /* Secciones de imágenes */
@@ -55,12 +65,11 @@ span {
     margin-bottom: 90px;
 }
 
-
 button {
     background-color: #15297e;
     color: white;
     border: none;
-    text-align:end;
+    text-align: end;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;

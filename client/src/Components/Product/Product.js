@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom'; // Importa useNavigate para nave
 const Product = () => {
     const [isPopupOpen, setPopupOpen] = useState(false);
     const navigate = useNavigate(); // Obtiene la función de navegación
+    const [termAndConditions, settermAndConditions] = useState(false);
 
     const product = {
         id: 1,
@@ -23,11 +24,16 @@ const Product = () => {
         setPopupOpen(true);
     };
 
+    const handleTick = () => { 
+        settermAndConditions(true)
+    }
+
     const handleAccept = () => {
         // Guarda el producto en el carrito usando el estado global
         dispatch(addToCart(product));
         // Redirige a "/formdepaciente" sin cerrar el pop-up
-        navigate('/formdepaciente');
+        termAndConditions === true ?
+        navigate('/formdepaciente'): window.alert("Debes aceptar los términos y condiciones para continuar")
     };
 
     const handleCancel = () => {
@@ -45,10 +51,12 @@ const Product = () => {
                 <div className="popup">
                     <p>Recuerde los síntomas por los que puede pedir.</p>
                     <label>
-                        <input type="checkbox" /> Acepto los términos y condiciones
+                        <input type="checkbox" onChange={handleTick}/> Acepto los términos y condiciones
                     </label>
+                    <br/>
                     <button onClick={handleCancel}>Cancelar</button>
-                    <button onClick={handleAccept}>Aceptar</button>
+                    <br/>
+                    <button onClick={handleAccept}>Continuar</button>
                 </div>
             )}
         </div>
