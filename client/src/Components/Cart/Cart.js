@@ -4,8 +4,16 @@ import axios from 'axios';
 import { useSelector } from 'react-redux';
 import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
 import './Cart.css';
+import { useNavigate } from 'react-router-dom';
 
-const Cart = ({ onRemoveFromCart }) => {
+const Cart = () => {
+    const navigate = useNavigate()
+
+    const onRemoveFromCart = (product) => {
+        if (product) {
+            navigate('/')
+        }
+    }
 
     //MERCADO PAGO
     const [preferenceId, setPreferenceId] = useState(null);
@@ -47,7 +55,7 @@ const Cart = ({ onRemoveFromCart }) => {
                 {cart.cart.map((product) => (
                     <li key={product.id}>
                         {product.name} - ${product.price}{' '}
-                        <button onClick={() => onRemoveFromCart(product)}>Eliminar</button>
+                        <button onClick={() => onRemoveFromCart(product)}>Cancelar</button>
                     </li>
                 ))}
             </ul>{

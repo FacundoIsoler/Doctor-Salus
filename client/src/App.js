@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './Store/Store.js';
 import Home from './Components/Home/Home';
-import Cart from './Components/Cart/Cart';
+import Cart from './Components/Cart/Cart.js';
 import PatientForm from './Components/PatientForm/PatientForm.js';
 import Navbar from './Components/Navbar/Navbar.js';
 
