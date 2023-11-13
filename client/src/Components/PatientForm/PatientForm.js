@@ -7,6 +7,7 @@ const PatientForm = () => {
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
+    const [dni, setDni] = useState('');
     const [reason, setReason] = useState('');
     const [age, setAge] = useState('');
 
@@ -37,6 +38,12 @@ const PatientForm = () => {
                 placeholder="Nombre y Apellido"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+            />
+            <input
+                type="number"
+                placeholder="N° de documento"
+                value={dni}
+                onChange={(e) => setDni(e.target.value)}
             />
             <select
                 value={reason}

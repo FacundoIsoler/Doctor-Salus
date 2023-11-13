@@ -1,45 +1,38 @@
-/* Navbar.css */
 .navbar {
     background: linear-gradient(to bottom, #95a3f3, #15297e);
     color: white;
     padding: 1rem;
     width: 100%;
-    position: fixed;
-    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.navbar-button {
-    text-decoration: none;
-    color: white;
-    font-weight: bold; /* Aumenta el grosor de la letra */
-    margin-right: 1rem; /* Espacio entre botones */
 }
 
 .navbar-logo {
     font-size: 1.5rem;
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 .navbar-links {
     list-style: none;
-    padding-right: 1rem;
+    padding: 0;
     display: flex;
 }
 
 .navbar-link {
-    margin-right: 1rem;
-    text-decoration: none;
-    color: white;
-    font-weight: bold; /* Aumenta el grosor de la letra */
+    margin-right: 1.25rem;
 }
 
-.navbar-link:hover {
-    text-decoration: none; /* Elimina el subrayado al pasar el mouse */
-    color: lightgray;
+.navbar-link a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-link a:hover {
+    text-decoration: underline;
 }
 
 /* Media queries para Navbar */
