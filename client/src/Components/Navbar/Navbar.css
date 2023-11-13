@@ -4,35 +4,37 @@
     color: white;
     padding: 1rem;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
-    display: flex;
-    justify-content: space-between;
 }
-
 
 .navbar-button {
-    text-decoration: none;
-    color: white;
-    margin-right: .625rem;
-    font-size: 1rem;
+    display: none;
 }
 
-
 .navbar-logo {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-decoration: none;
     color: white;
+    margin-left: 1rem;
 }
 
 .navbar-links {
     list-style: none;
-    padding-right: 1rem;
+    padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 1rem;
 }
 
 .navbar-link {
-    margin-right: 1.25rem;
+    margin: 0.5rem;
     text-decoration: none;
     color: white;
 }
@@ -40,4 +42,19 @@
 .navbar-link:hover {
     text-decoration: underline;
     color: lightgray;
+}
+
+/* Media queries para Navbar */
+@media (max-width: 768px) {
+    .navbar-logo {
+        font-size: 1.5rem;
+    }
+
+    .navbar-button {
+        display: inline;
+        font-size: 1rem;
+        color: white;
+        margin-right: 0.5rem;
+    }
+
 }

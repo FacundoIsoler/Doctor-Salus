@@ -20,22 +20,19 @@ body {
 
 h1 {
     font-size: 60px;
-    margin: 55px 15px 0 0 ;
+    margin: 55px 15px 0 0;
 }
 
 span {
     font-size: 30px;
+    margin: 20px 0;
     width: 65%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto */
-}
-
-.alert {
-    color: red
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .home li {
     font-size: 25px;
-    list-style: none; /* Ajusta los puntos de la lista al interior del texto */
+    list-style: none;
 }
 
 /* Secciones de imágenes */
@@ -43,33 +40,32 @@ span {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 
 .home-section {
     flex: 1;
-    margin: 40px;
-    max-width: 30%;
+    margin: 20px;
+    max-width: calc(100% / 3 - 40px);
 }
 
 .home-section img {
     max-width: 100%;
-    height: 80%;
+    height: auto;
 }
 
 .product-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 90px;
+    margin: 20px;
 }
 
 button {
     background-color: #15297e;
     color: white;
     border: none;
-    text-align: end;
+    text-align: center;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -86,5 +82,48 @@ button:hover {
     padding: 20px;
     text-align: center;
     position: relative;
-    margin-top: auto; /* Muestra el footer al final de la página */
+    margin-top: auto;
+}
+
+/* Media queries para hacer que los estilos sean responsivos */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    span {
+        font-size: 20px;
+    }
+
+    .home-section {
+        max-width: calc(100% / 2 - 40px);
+    }
+
+    .product-container {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    span {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .home-section {
+        max-width: 100%;
+    }
+
+    .home-section img {
+        height: auto;
+    }
+
+    .product-container {
+        margin: 5px;
+    }
 }
