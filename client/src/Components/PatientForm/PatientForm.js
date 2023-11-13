@@ -57,6 +57,7 @@ const PatientForm = () => {
                 placeholder="Edad"
                 value={age}
                 onChange={(e) => setAge(e.target.value)}
+                className='input-age'
             />
             <button onClick={handleRequest}>Solicitar atención médica virtual</button>
         </div>

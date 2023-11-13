@@ -4,57 +4,52 @@
     color: white;
     padding: 1rem;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar-button {
-    display: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold; /* Aumenta el grosor de la letra */
+    margin-right: 1rem; /* Espacio entre botones */
 }
 
 .navbar-logo {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: white;
-    margin-left: 1rem;
 }
 
 .navbar-links {
     list-style: none;
-    padding: 0;
+    padding-right: 1rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    margin: 1rem;
 }
 
 .navbar-link {
-    margin: 0.5rem;
+    margin-right: 1rem;
     text-decoration: none;
     color: white;
+    font-weight: bold; /* Aumenta el grosor de la letra */
 }
 
 .navbar-link:hover {
-    text-decoration: underline;
+    text-decoration: none; /* Elimina el subrayado al pasar el mouse */
     color: lightgray;
 }
 
 /* Media queries para Navbar */
 @media (max-width: 768px) {
-    .navbar-logo {
-        font-size: 1.5rem;
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .navbar-button {
-        display: inline;
-        font-size: 1rem;
-        color: white;
-        margin-right: 0.5rem;
+    .navbar-link {
+        margin: 10px 0;
     }
-
 }
